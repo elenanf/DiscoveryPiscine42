@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Balloon</title>
+    <style>
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .balloon {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+            transition: .2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="balloon">
+        </div>
+    </div>
+
+    <script>
+
+        let balloon_style = document.querySelector(".balloon");
+        
+        let balloon_size = 200;
+        balloon_style.style.background = "red";
+        
+        balloon_style.addEventListener("click", changeBalloonAppearance);
+        balloon_style.addEventListener("mouseleave", mouseLeaveBalloonAppearance);
+
+        function changeBalloonAppearance() {
+
+            if (balloon_size < 420)
+                {
+                    balloon_style.style.width = balloon_size + 10 + "px";
+                    balloon_style.style.height = balloon_size + 10 + "px";
+                    balloon_size += 10;
+                } 
+                else {
+                    balloon_size = 200;
+                    balloon_style.style.width = balloon_size + "px";
+                    balloon_style.style.height = balloon_size + "px";
+                }
+
+            if (balloon_style.style.background === "red") {
+                balloon_style.style.background = "green";
+            } else if (balloon_style.style.background === "green") {
+                balloon_style.style.background = "blue";
+            } else {
+                balloon_style.style.background = "red"
+            }
+
+        };
+
+        function mouseLeaveBalloonAppearance() {
+            if (balloon_size > 200) {
+                balloon_style.style.width = balloon_size - 5 + "px";
+                balloon_style.style.height = balloon_size - 5 + "px";
+                balloon_size -= 5;
+            }
+
+            if (balloon_style.style.background === "blue") {
+                balloon_style.style.background = "green";
+            } else if (balloon_style.style.background === "green") {
+                balloon_style.style.background = "red";
+            } else {
+                balloon_style.style.background = "blue"
+            }
+        };
+
+    </script>
+</body>
+</html>

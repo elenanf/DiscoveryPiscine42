@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;   
+}
+
+body {
+    background-color: rgb(10, 24, 52);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+header {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: rgb(222, 220, 232);
+    margin-left: 10px;
+}
+
+header li{
+    padding: 20px;
+    position: relative;
+    background-color: rgb(38, 46, 73);
+    transition: 0.2s;
+}
+
+header li:hover {
+    background-color: rgb(66, 80, 126);
+}
+
+
+header li:hover .menu_deroulant{
+    display: block;
+}
+
+.menu_deroulant {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-weight: 100;
+}
+
+
+.baguette:hover {
+    background-color: rgb(231, 181, 99);
+}
+
+#tomato:hover {
+    background-color: rgb(227, 100, 104);
+}
+
+#chicken:hover {
+    background-color: rgb(231, 202, 166);
+}
+
+#lettuce:hover {
+    background-color: rgb(137, 191, 117);
+}

@@ -1,0 +1,51 @@
+body {
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid;
+    box-shadow: 5px 5px 5px rgb(214, 212, 212);
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.social_media_logo {
+    height: 20px;
+    width: auto;
+    margin-left: 10px;
+}
+
+.center_align {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: black;
+    color: white;
+}
+
+a:visited {
+    color:rgb(255, 255, 255);
+}
+
+a:active {
+    color:rgb(251, 177, 117);
+}
