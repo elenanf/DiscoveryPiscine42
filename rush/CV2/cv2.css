@@ -1,0 +1,10 @@
+.header_image {
+    width: 100vw;
+    height: 60vh;
+    background-image: url("brenda-godinez-_Zn_7FzoL1w-unsplash.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+}
